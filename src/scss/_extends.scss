@@ -1,0 +1,12 @@
+// Extends
+
+%ex-container {
+    max-width: 640px;
+    margin: 40px auto 0;
+}
+
+%ex-card {
+    background-color: var(--c-black-light);
+    border-radius: 6px;
+    padding: 30px 20px;
+}

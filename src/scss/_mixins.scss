@@ -1,0 +1,39 @@
+@mixin mx-primary-btn {
+    color: var(--c-brand-text);
+    background-color: var(--c-yellow);
+    border: 2px solid var(--c-yellow);
+    transition: background-color .1s ease, transform .1s ease, opacity .1s ease;
+    &:hover {
+      color: var(--c-brand-text);
+      background-color: var(--c-yellow-light);
+      border-color: var(--c-yellow);
+      cursor: pointer;
+    }
+}
+
+@mixin mx-primary-icon {
+    color: var(--c-brand);
+    transition: color .1s ease;
+    &:hover {
+        color: var(--c-yellow-light);
+        cursor: pointer;
+    }
+}
+
+@mixin mx-fav-icon {
+    color: var(--c-black);
+    transition: color .1s ease;
+    &:hover {
+        color: var(--c-yellow-light);
+        cursor: pointer;
+    }
+    &.--active {
+        color: var(--c-brand);
+    }
+}
+
+@mixin mx-section-title {
+    color: var(--c-text-light-2);
+    font-size: 1em;
+    line-height: 1;
+}
